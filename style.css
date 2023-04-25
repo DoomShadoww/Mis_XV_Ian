@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Tangerine';
+    src: url('fonts/Tangherine-Regular.ttf') format('woff2'),
+         url('fonts/Tangerine-Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body{
+
+    background: #FF5454;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom,#ff2929 0%,#5a0080 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #ff2929 0%,#5a0080 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Tangerine';
+    box-sizing: border-box;
+    
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #ff2929 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    
+
+}
+
+.logo{
+    font-size: 28px;
+    padding-top: 10px;
+    color: #fff;
+}
+
+.barras{
+    display: none;
+}
+
+.nav-bar ul{
+    display: flex;
+
+}
+
+.nav-bar ul li a{
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 25px;
+    border-radius: 15px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+
+.nav-bar ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    
+
+}
+
+.nav-bar ul li a:active{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff00;
+}
+
+
+@media(max-width:900px){
+    header{
+        padding: 0px 30px;
+    }
+
+    .barras{
+        display: block;
+        cursor: pointer;
+
+    }
+
+    .barras .line{
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0px;
+
+
+    }
+
+    .nav-bar{
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #FF5454;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom,#ff00006d 10%,#ae00ff75 100%);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #ff00006d 10%,#ae00ff75 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        transition: 0.5s;
+        overflow: hidden;
+
+    }
+
+    .nav-bar.active{
+        height: 350px;
+    }
+
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        transition: 0.5s;
+        opacity: 0;
+
+    }
+
+    .nav-bar.active ul{
+        opacity: 1;
+
+    }
+
+    .nav-bar ul li a{
+        margin-bottom: 20px;
+    }
+}
