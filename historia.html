@@ -83,7 +83,7 @@
 
         <nav class="nav-bar">
            <ul>
-            <li> <a href="index.html">Home</a></li>
+            <li> <a href="index.html">Inicio</a></li>
             <li> <a href="historia.html">Mi historia</a></li>
             <li> <a href="confirmar.html">Confirmación</a></li>
            </ul>
@@ -97,15 +97,15 @@
     <h1 id="textoG">Mi historia!</h1>
     
     <button id="myButton2">
-      <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z"/>
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-envelope-paper-heart-fill animated-icon" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="m3 7.5 3.5 2L8 8.75l1.5.75 3.5-2v-6A1.5 1.5 0 0 0 11.5 0h-7A1.5 1.5 0 0 0 3 1.5v6ZM2 3.133l-.941.502A2 2 0 0 0 0 5.4v.313l2 1.173V3.133Zm12 3.753 2-1.173V5.4a2 2 0 0 0-1.059-1.765L14 3.133v3.753Zm-3.693 3.324L16 6.873v6.5l-5.693-3.163Zm5.634 4.274L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516ZM5.693 10.21 0 13.372v-6.5l5.693 3.338ZM8 1.982C9.664.309 13.825 3.236 8 7 2.175 3.236 6.336.31 8 1.982Z"/>
       </svg>
        
     </button>
     
   </div>
 
-    <audio id="myAudio2" src="song/up.mp3"></audio>
+    <audio id="myAudio2" src="song/hist.mp3"></audio>
     <script>
       function reproducirCancion() {
         var audio = document.getElementById("myAudio2");
@@ -122,6 +122,10 @@
       };
     </script>
      <style>
+
+      ul li a{
+        text-decoration: none;
+      }
       #countdown {
         font-size: 3em;
         font-weight: bold;
@@ -180,6 +184,25 @@
       
 
       }
+
+        @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.3);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .animated-icon {
+        animation-name: pulse;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform-origin: center center;
+      }
       
 
 
@@ -191,21 +214,21 @@
     <div id="home">
 
         <h1 id="texto">
-            Esta pequeña niña que nació en el año 2008 y fue nombrada Ian Yazmin, ahora se convierte en una mujer. <br>
+          Esta pequeña niña, nació en el año 2008 y sus padres eligieron el nombre de Ian Yazmin, quien en un abrir y cerrar de ojos, ahora se convierte en una Adolescente Señorita. <br>
 
-            Todo comenzó ... cuando sus padres se casaron y planearon que 2 años después de la boda se embarazarían y quien diría que su plan estaba perfectamente estructurado y después de ese tiempo nació una pequeña bebita, quien ahora Gracias a Dios esta cumpliendo 15 años. <br>
-
-            Hola!!! Soy Yaz y esta es mi historia ... <br>
-
-            Nací un 19 de Julio del 2008, en algún hospital de la Ciudad, que no recuerdo el nombre, pero lo que si recuerdo ... es que mi familia desde que supieron que llegaría, me daban tanto amor y recuerdo mucho que mi mama siempre me cantaba la canción  llamada "Todo cambio" de Camila, ahora se de donde tome muy buen gusto musical, además que considero que desde pequeña me encanta Bailar, Cantar, Escuchar música, Salir de fiesta y Viajar. <br>
-
-            Les comparto que soy muy afortunada, porque Crecí en un ambiente de amor, respeto, honestidad y todo es gracias a mi familia, en especial a Mis padres, Abuelos y Madrinas que siempre han estado para mi en mis momentos malos, buenos y hasta en los peores. <br>
-
-            Mi vida a sido un abrir y cerrar de ojos, un día yo le dije a mis padres que yo ya quería ser grande y ellos me decían que mejor disfrutara mis momentos de niña, por que cuando creciera ya no iba a disfrutar de la misma manera que disfrutara mis tiempos de niña y quien diría que tenían tanta razón. <br>
-
-            Ahora que soy una adolescente he pasado por muchas cosas, saturada de actividades, algunas agradables y otras no, pero en todo este camino he conocido amistades que espero y se queden toda la vida, a quienes les agradezco que siempre estén ahí apoyándome en mis locuras y que sean mis cómplices en todo. <br>
-
-            También les cuento, estoy a punto de entrar a la Prepa,  lo cual me emociona y a la vez me entristece, ya que me separare de mis amigos de la Secu, pero todo sea por ir paso a paso construyendo mi futuro, ya que mi deseo es ser una gran Ingeniera Industrial, porque me gustaría trabajar en algún momento de mi vida en la Formula 1, ese es uno de mi mas grande sueño y viajar por todo el país y el mundo entero, haciendo lo que me gusta y cumpliendo cada uno de mis objetivos, también me gustaría estudiar Gastronomía, ya que en la pandemia desarrolle un gusto por cocinar y quiero abrir un restaurante, pero primero me enfocare en lo que sigue de forma inmediata ...cursar el Bachillerato  y después si Dios y el Universo me lo sigue permitiendo, continuar con una Carrera y luego viajare y por supuesto disfrutare con mi familia y amigos  todos los días de mi vida.
+          Todo comenzó ... cuando sus padres se casaron y planearon que 2 años después de la boda se embarazarían y quien diría que su plan estaba perfectamente estructurado y después de ese tiempo nació una pequeña bebita tierna (bueno, “eso dicen mis Papas”), quien ahora Gracias a Dios está cumpliendo 15 años. <br><br>
+          
+          Hola!!! Soy Yaz y esta es mi historia ... 
+          Nací un 19 de Julio del 2008, en algún hospital de la Ciudad de México y les cuento que con el paso de los años confirmé con recuerdos y evidencias que … mi Familia me esperaba con tanto Amor desde que se enteraron de mi llegada … y uno de los recuerdos que están presentes desde muy pequeña, es que mi mama siempre me cantaba la canción llamada "Todo cambio" del grupo Camila, es por ello, que desde hace años tome muy buen gusto musical, además de que en mi memoria, recuerdo que desde pequeña me encanta Bailar, Cantar, Escuchar música, Salir de fiesta y Viajar... <br><br>
+          
+          Les comparto que soy muy afortunada, porque he crecido en un ambiente de Amor, Respeto, Honestidad y Consejos, todo es Gracias a mi Familia, en especial a Mis padres, Abuelit@s, Madrinas y Padrinos, quienes siempre han estado para mí en mis momentos buenos, no tan buenos y hasta en los peores... 
+          
+          Mi vida ha sido un abrir y cerrar de ojos, un día yo le dije a mis Papas … que yo ya quería ser grande y ellos me decían… mejor disfruta tus momentos de niñez, porque conforme vayas creciendo, se reducen las horas de disfrutar de la misma manera, libre de tus tiempos, porque cada que pasan los años, los compromisos te acompañan según tu edad, y quien diría que tenían tanta razón, ahora veo que no tengo tanto tiempo libre para hacer travesuras… <br><br>
+          
+          Ahora que soy una adolescente, les confirmo que vivo experiencias nuevas, pero ahora, saturada de actividades, algunas agradables y otras no tanto, sin embargo, todo ha valido la pena, ya que en todo este camino, he conocido amistades que espero y se queden toda la vida, a quienes les agradezco que siempre estén ahí apoyándome en mis locuras y que sean mis cómplices de Vida en todo momento. <br><br>
+          
+          Les cuento que estoy muy contenta, ya que estoy  por terminar la secundaria y a punto de entrar a nivel medio superior, aun desconozco cual será mi destino, si seré puma o politécnica,  lo cual me emociona y a la vez me entristece, ya que me separare de mis amigos de la Secu, pero todo sea por ir paso a paso construyendo mi futuro, ya que mi deseo es ser una gran Ingeniera Industrial, porque me gustaría trabajar en algún momento de mi vida en la Formula 1, ese es otro de mis más grandes sueños y viajar por todo el país y el mundo entero,
+           haciendo lo que me gusta y cumpliendo cada uno de mis objetivos, también me gustaría estudiar Gastronomía, ya que en la pandemia desarrolle un gusto por cocinar y como me dicen que "me queda muy rico" … algún día quiero abrir un restaurante, pero primero me enfocare en lo que sigue de forma inmediata ...cursar el Bachillerato  y después si Dios y el Universo me lo sigue permitiendo, continuar con una Carrera, para luego viajar y por supuesto continuar disfrutando con mi familia y amig@s  todos los días de mi vida.
          </h1>
       
          <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -229,7 +252,7 @@
 
 <hr>
          <a class="ubi"  id="textoM" href="index.html">
-            Inicio! 🌹</a>
+            Volver a inicio! ❣️</a>
 
 
             <h1 id="texto">
@@ -248,7 +271,7 @@
     <footer>
         <h1 id="texto">
           © 2023  Todos los derechos reservados. <br>
-          con mucho amor por: Bryan Pineda 💖.
+          con mucho amor por: Bryan Pineda.
         </h1>
 
     <script src="JS/script.js"></script>
