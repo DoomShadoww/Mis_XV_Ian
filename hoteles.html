@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XV Ian</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carga.css">
+   
+
+</head>
+<body>
+  <style>
+    #bienvenida {
+        background-image: url('img/FXV.png');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0 20px;
+    }
+
+    h1, button {
+        color: white;
+        text-align: center;
+    }
+
+    button {
+        background-color: #faf5f500;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 50px;
+        
+
+    }
+
+    button:hover{
+      color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    transition: 0.2s;
+    margin: 0 5px;
+    }
+
+    
+</style>
+
+
+
+    <script>
+        window.addEventListener('load', function() {
+       var loadingScreen = document.getElementById('loading-screen');
+       setTimeout(function() {
+         loadingScreen.style.opacity = '0';
+         setTimeout(function() {
+           loadingScreen.style.display = 'none';
+         }, 1000);
+       }, 1500);
+     });
+       </script>
+
+         <div id="loading-screen">
+           <div class="loader">
+           <img src="img/XV.png" alt="Cargando..." style="width:25%">
+           </div>
+         </div>
+
+
+    <header>
+        <div class="logo"><img src="img/XV.png" alt="logo" style="width: 15%;"></div>
+        <div class="barras">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <nav class="nav-bar">
+           <ul>
+            <li> <a href="index.html">Inicio</a></li>
+            <li> <a href="historia.html">Mi historia</a></li>
+            <li> <a href="confirmar.html">Confirmación</a></li>
+           </ul>
+        </nav>
+    </header>
+
+  </head>
+  <body>
+   
+
+    <audio id="myAudio" src="song/cancionPagina.mp3"></audio>
+    <script>
+      function reproducirCancion() {
+        var audio = document.getElementById("myAudio");
+        audio.play();
+      }
+    
+      var boton = document.getElementById("myButton");
+      boton.onclick = function() {
+        reproducirCancion();
+        $('html, body').animate({
+          scrollTop: $("#home").offset().top
+        }, 1000);
+        return false;
+      };
+    </script>
+     <style>
+     
+      #texto{
+        font-size: 30.0pt;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: 2px 2px 2px #000000;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      #textoG{
+        font-size: 4em;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: 2px 2px 2px #000000;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      
+
+      #textoM{
+        font-size: 3em;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: 2px 2px 2px #000000;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .imgs{
+        display: block;
+        margin: auto;
+      }
+
+      a.ubi{
+        
+      display: block;
+      margin: auto;
+      max-width: 50%;
+      text-align: center;
+      background-color: #00000069;
+      border-radius: 15px;
+      
+
+      }
+      
+
+
+     
+
+
+     </style>
+     <hr><br><br>
+    <div id="home">
+     
+
+
+          <h1 id="textoG">
+          Información de Hoteles!
+          </h1>
+          <img src="img/hotel3.png" alt="" width="90%" class="imgs center">
+          <h1 id="textoG">
+            Lofts Amore
+          </h1>
+          <h1 id="textoM">
+            Av. del Ejido 3, Xocotlan, 56236 Texcoco, Méx.  
+          </h1>
+
+          <a  class="ubi" id="textoM" href="https://www.google.com.mx/maps/place/LOFTS+AMORE/@19.5173768,-98.8534303,17z/data=!3m1!4b1!4m9!3m8!1s0x85d1e7cb8f40fed1:0xed1056e969f55a35!5m2!4m1!1i2!8m2!3d19.5173768!4d-98.8512416!16s%2Fg%2F11jqb34nj0?coh=164777&entry=tt&shorturl=1">
+            Ver ubicacion!</a> <br>
+
+          <img src="img/hotel1.png" alt="" width="90%" class="imgs center">
+
+          <h1 id="textoG">
+            Hotel Santa Bertha 
+          </h1>
+          <h1 id="textoM">
+            Calle de Nezahualcóyotl 213, Centro, 56100 Texcoco, Méx. 
+          </h1>
+
+          <a class="ubi"  id="textoM" href="https://www.google.com.mx/maps/place/Hotel+Santa+Bertha/@19.5134942,-98.8807214,19z/data=!4m9!3m8!1s0x85d1e7b4d4fa9571:0xcfd66270c90a947c!5m2!4m1!1i2!8m2!3d19.5136042!4d-98.8801662!16s%2Fg%2F1tdky03j?hl=es">
+            Ver ubicacion!</a>
+              <br>
+
+            <img src="img/hotel2.png" alt="" width="90%" class="imgs center">
+
+          <h1 id="textoG">
+            La Mansión del Quijote 
+          </h1>
+          <h1 id="textoM">
+            Carr al Molino de Flores KM 2.5, Xocotlan, 56200 Texcoco, Méx. 
+          </h1>
+
+          <a class="ubi"  id="textoM" href="https://www.google.com.mx/maps/place/La+Mansión+del+Quijote/@19.512165,-98.8537895,16z/data=!4m9!3m8!1s0x85d1e792df2025fb:0x67e75f118deac95b!5m2!4m1!1i2!8m2!3d19.5163795!4d-98.849717!16s%2Fg%2F1tcy4nbd?hl=es">
+            Ver ubicacion!</a>
+              <br>
+            
+
+        
+          <br><br><hr> <br><br>
+
+
+       
+         <a class="ubi"  id="textoM" href="index.html">
+            Volver al inicio! ❣️</a>
+
+
+            <h1 id="texto">
+              Confirma tu asistencia antes del 1 de Junio
+            </h1>
+
+            <a  class="ubi" id="textoM" href="confirmar.html">
+              Confirmar! 🌹</a>
+
+              <br><br>
+          
+
+    
+
+
+
+              
+
+    
+
+    </div>
+
+    <footer>
+    <h1 id="texto">
+      © 2023  Todos los derechos reservados. <br>
+      con mucho amor por: Bryan Pineda.
+    </h1>
+
+    </footer>
+
+    <script src="JS/script.js"></script>
+    <script src="JS/countdown.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>
