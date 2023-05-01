@@ -103,8 +103,8 @@ header{
         right: 0;
         width: 100vw;
         background: #FF5454;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to bottom,#ff00006d 10%,#ae00ff75 100%);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to bottom, #ff00006d 10%,#ae00ff75 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: -webkit-linear-gradient(to bottom,#ff2929 20%,#ae00ffb2 100%);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #ff2929 20%,#ae00ffb2 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         transition: 0.5s;
         overflow: hidden;
 
