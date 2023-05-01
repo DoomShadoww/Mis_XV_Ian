@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <meta property="og:title" content="Invitación">
+    <meta property="og:description" content="Mis XV, Ian Yazmin">
+    <meta property="og:image" content="img/XV.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +16,7 @@
 <body>
   <style>
     #bienvenida {
-        background-image: url('img/FXV.png');
+        background-image: url('img/fondo F.png');
         background-size: cover;
         background-position: center;
         display: flex;
@@ -92,12 +95,15 @@
   </head>
   <body>
     <div id="bienvenida">
-      <br><br><br> <br><br><br>
-    <h1>Bienvenido</h1>
+      <br><br><br> <br><br><br><br> <br><br><br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br><br><br>
+    <h1 id="textoM">Abre aqui! <br>  </h1>
+ 
+    <button id="myButton">
+      <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-envelope-paper-heart-fill animated-icon" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="m3 7.5 3.5 2L8 8.75l1.5.75 3.5-2v-6A1.5 1.5 0 0 0 11.5 0h-7A1.5 1.5 0 0 0 3 1.5v6ZM2 3.133l-.941.502A2 2 0 0 0 0 5.4v.313l2 1.173V3.133Zm12 3.753 2-1.173V5.4a2 2 0 0 0-1.059-1.765L14 3.133v3.753Zm-3.693 3.324L16 6.873v6.5l-5.693-3.163Zm5.634 4.274L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516ZM5.693 10.21 0 13.372v-6.5l5.693 3.338ZM8 1.982C9.664.309 13.825 3.236 8 7 2.175 3.236 6.336.31 8 1.982Z"/>
+      </svg>
+    </button>
     
-    <button id="myButton"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z"/>
-    </svg></button>
   </div>
 
     <audio id="myAudio" src="song/cancionPagina.mp3"></audio>
@@ -174,7 +180,29 @@
       border-radius: 15px;
       
 
+      
+
       }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.3);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .animated-icon {
+        animation-name: pulse;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform-origin: center center;
+      }
+
       
 
 
@@ -187,10 +215,13 @@
       <h1 id="textoG">Viernes 4 de agosto <br> del 2023</h1>
       <p id="countdown"></p>
       <br><br>
-      <p id="texto">Llego el día soñado ... donde comenzamos a crecer y a comprender lo bella que es la vida, se feliz, 
-        vive la vida loca, ríe, divierte y lo mas importante comparte, ya que esto solo se vive una vez en la vida; 
-        y con amor y alegría festejare con toda mi familia y amig@s de este gran día, en especial
-         un agradecimiento tan grande a Dios y a mis padres por darme la oportunidad de estar con ell@s y permitirme la vida... 💕🌹. </p>
+      <p id="texto">Llego el día soñado ... donde comenzamos a crecer y a comprender lo bella que es la vida, me encanta decir:
+         se feliz, vive la vida loca, ríe, divierte y lo más importante comparte ... deja una huellita en cada persona que forma
+          parte de tu camino con buenas acciones, ya que cada momento… solo se vive una vez, porque ningún día se repite… 
+
+        ...Es por ello que con mucho amor y alegría, festejare con toda mi familia y amig@s de este gran día, mis XV´s, 
+        porque deseo ofrecer primeramente un especial y enorme Agradecimiento a Dios y a mis padres por darme la oportunidad de 
+        estar con ell@s y permitirme la Vida a su lado… 💕. </p>
       
          <p id="texto">En compañía de Mis Padres: <br>
 
@@ -237,29 +268,56 @@
             </h1>
 
             <p id="texto">
-              Estas cordialmente invitado a mi fiesta, que estoy preparando con gran entusiasmo, debes de tener 
-              listos tus zapatos de baile, ya que en esta fiesta no se aceptara que te la pases sentad@,
-               para mi es muy importante que me acompañes a divertirte y a bailar,
-               ya que mi sueño mas grande es que sea un día inolvidable que viviré esta vez como Quinceañera.
+              Entonces … por favor … ¡Prepárate para una tarde-noche de fiesta!
+              Estas cordialmente invitado a mi evento, el cual, estoy preparando junto a mi Familia con gran entusiasmo,
+               recuerda que debes de tener listos tus zapatos de baile, ya que en esta fiesta no se aceptará que te la pases sentad@, 
+               porque para mí es muy importante que me acompañes a divertirnos junt@s y a dejar tus mejores pasos en la pista, 
+               ya que este día es uno de mis más grandes sueños, es por ello, que deseo de tu compañía y alegria,
+               ya que tú formas parte de las personitas que me quieren desde hace 15 años, motivo suficiente para disfrutar 
+               de un día inolvidable como una feliz y divertida quinceañera.
             </p>
 
             <hr>
 
-            <h1 id="textoG">Código de Vestimenta: <br>
-              Formal
+            <h1 id="textoG">Algunos recuerdos de mi infancia
+              
+            </h1> <br>
+
+            <a class="ubi"  id="textoM" href="historia.html">
+              Click aqui! 💖</a>
+
+            <h1 id="textoM">
+              Mis Padres y yo estaremos felices de contar con tu presencia...
             </h1>
 
-            <hr>
+            <h1 id="texto">
+              Confirma tu asistencia antes del 31 de Mayo
+            </h1>
 
-            <h1 id="textoG">
-              En este día tan especial para mi, el mejor regalo es que... 
+            <a  class="ubi" id="textoM" href="confirmar.html">
+              Confirmar! 🌹</a>
+
+
+            <h1 id="textoM">
+              Y por cierto, en este día tan especial para mí, mi mejor regalo será…
 
             </h1>
 
             <h1 id="textoM">
               
-              me puedes acompañar con tu presencia de inicio a fin 💖.
+             que me acompañes con tu presencia de inicio a fin.
             </h1>
+
+            
+        
+
+            
+
+            <hr>
+            <h1 id="textoG">Código de Vestimenta: <br>
+              Formal
+            </h1>
+         
 
             <hr>
 
@@ -267,66 +325,20 @@
               Dónde Quedarte: <br>
             </h1>
 
-          <h1 id="textoM">
-          Información de Hoteles
-          </h1>
+            <a  class="ubi" id="textoM" href="hoteles.html">
+              Click aqui! 🏨</a>
 
-          <img src="img/hotel1.png" alt="" width="90%" class="imgs center">
-
-          <h1 id="textoG">
-            Hotel Santa Bertha 
-          </h1>
-          <h1 id="textoM">
-            Calle de Nezahualcóyotl 213, Centro, 56100 Texcoco, Méx. 
-          </h1>
-
-          <a class="ubi"  id="textoM" href="https://www.google.com.mx/maps/place/Hotel+Santa+Bertha/@19.5134942,-98.8807214,19z/data=!4m9!3m8!1s0x85d1e7b4d4fa9571:0xcfd66270c90a947c!5m2!4m1!1i2!8m2!3d19.5136042!4d-98.8801662!16s%2Fg%2F1tdky03j?hl=es">
-            Ver ubicacion!</a>
-              <br>
-
-            <img src="img/hotel2.png" alt="" width="90%" class="imgs center">
-
-          <h1 id="textoG">
-            La Mansión del Quijote 
-          </h1>
-          <h1 id="textoM">
-            Carr al Molino de Flores KM 2.5, Xocotlan, 56200 Texcoco, Méx. 
-          </h1>
-
-          <a class="ubi"  id="textoM" href="https://www.google.com.mx/maps/place/La+Mansión+del+Quijote/@19.512165,-98.8537895,16z/data=!4m9!3m8!1s0x85d1e792df2025fb:0x67e75f118deac95b!5m2!4m1!1i2!8m2!3d19.5163795!4d-98.849717!16s%2Fg%2F1tcy4nbd?hl=es">
-            Ver ubicacion!</a>
-              <br>
-            <img src="img/hotel3.png" alt="" width="90%" class="imgs center">
-
-          <h1 id="textoG">
-            Lofts Amore
-          </h1>
-          <h1 id="textoM">
-            Av. del Ejido 3, Xocotlan, 56236 Texcoco, Méx.  
-          </h1>
-
-          <a  class="ubi" id="textoM" href="https://www.google.com.mx/maps/place/LOFTS+AMORE/@19.5173768,-98.8534303,17z/data=!3m1!4b1!4m9!3m8!1s0x85d1e7cb8f40fed1:0xed1056e969f55a35!5m2!4m1!1i2!8m2!3d19.5173768!4d-98.8512416!16s%2Fg%2F11jqb34nj0?coh=164777&entry=tt&shorturl=1">
-            Ver ubicacion!</a>
-          <br><br><hr> <br><br>
+         
 
 
-          <h1 id="textoM">
-            Mis Padres y yo Estaremos felices de contar con tu presencia...
-          </h1>
+          
           <h1 id="textoG">
             ¡Gracias!
           </h1>
 
-          <a class="ubi"  id="textoM" href="historia.html">
-            Mi historia! 🌹</a>
+    
 
 
-            <h1 id="texto">
-              Confirma tu asistencia antes del 1 de Junio
-            </h1>
-
-            <a  class="ubi" id="textoM" href="confirmar.html">
-              Confirmar! 🌹</a>
 
               <br><br>
 
@@ -337,7 +349,7 @@
     <footer>
     <h1 id="texto">
       © 2023  Todos los derechos reservados. <br>
-      con mucho amor por: Bryan Pineda 💖.
+      con mucho amor por: Bryan Pineda.
     </h1>
 
     </footer>
